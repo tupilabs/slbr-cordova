@@ -2,10 +2,10 @@
 <widget id="br.com.speaklikeabrazilian" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>SpeakLikeABrazilian</name>
     <description>
-        App to share Brazilian Portuguese common expressions and slangs with foreigners.
+        App to learn common expressions and slangs in Brazilian Portuguese.
     </description>
-    <author email="slbr@tupilabs.com" href="http://speaklikeabrazilian.com">
-        The Speak Like A Brazilian team
+    <author email="brunodepaulak@yahoo.com.br" href="http://speaklikeabrazilian.com">
+        Bruno P. Kinoshita, The Speak Like A Brazilian team
     </author>
     <content src="index.html" />
     <access origin="*" />

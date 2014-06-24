@@ -35,7 +35,6 @@
 /home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/cordova_plugins.js \
 /home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/cordova.js \
 /home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/img \
-/home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/res \
 /home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/js \
 /home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
@@ -148,13 +147,6 @@
 /home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/css/images/icons-png/cloud-white.png \
 /home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/css/images/icons-png/carat-u-white.png \
 /home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/img/brazil.png \
-/home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/res/screens \
-/home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/res/icons \
-/home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/res/icons/android \
-/home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/res/icons/android/icon-72-hdpi.png \
-/home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/res/icons/android/icon-48-mdpi.png \
-/home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/res/icons/android/icon-36-ldpi.png \
-/home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/res/icons/android/icon-96-xhdpi.png \
 /home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/js/jquery-2.1.1.min.js \
 /home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/js/slbr.js \
 /home/kinow/php/workspace/slbr-cordova/platforms/android/assets/www/js/jquery.validate.min.js \
