@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/slbr.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div data-role="page" id="home">
+    <div data-theme="a" data-role="header">
+        <span class="ui-btn-left"><img src="img/brazil.png" ></span>
+        <h3>
+            Speak Like A Brazilian
+        </h3>
+        <a id="reloadButton" class="ui-btn-right">Random</a>
+    </div>        
+    <div class="ui-content" role="main">
+        <form class='validateMe' method='get' onsubmit='return submitSearchForm()'>
+		  <input type="search" placeholder="Search" name="q" id="q" value="" data-mini="true" required />
+        </form>
+        <div class="example-wrapper" data-iscroll data-inset="true">
+            <ul data-role="listview" id="expression-list" data-theme="a">
+                
+            </ul>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer">
+        <h1>&copy; TupiLabs 2012-2014</h1>
+    </div>              
+</div>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/slbr.js"></script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+
+    $(document).ready(function(e) {
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + 
+                  '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    }); 
+
+    $('[data-role=page]').on('pageshow', function (event, ui) {
+        try {
+            _gaq.push(['_setAccount', 'UA-31509655-1']);
+    
+            if ($.mobile.activePage.attr("data-url")) {
+                _gaq.push(['_trackPageview', $.mobile.activePage.attr("data-url")]);
+            } else {
+                _gaq.push(['_trackPageview']);
+            }
+        } catch(err) {}
+    
+    });
+</script>
+
+</body>
+
+</html>
