@@ -10,5 +10,13 @@
             "type": "local",
             "path": "/home/kinow/.plugman/cache/org.apache.cordova.device/0.2.10/package"
         }
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

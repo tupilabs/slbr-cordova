@@ -11,6 +11,10 @@
                         {
                             "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -22,6 +26,9 @@
             "PACKAGE_NAME": "br.com.speaklikeabrazilian"
         },
         "org.apache.cordova.device": {
+            "PACKAGE_NAME": "br.com.speaklikeabrazilian"
+        },
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "br.com.speaklikeabrazilian"
         }
     },

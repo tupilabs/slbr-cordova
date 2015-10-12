@@ -1,5 +1,5 @@
 $(document).on('pageinit', '#home', function(){ 
-
+    promise.ajaxTimeout = 10000;
     loadRandomExpressions();
 
     try{
@@ -17,20 +17,17 @@ $(document).on('pageinit', '#home', function(){
 });
 
 var loadRandomExpressions = function() {
-    var url = 'http://speaklikeabrazilian.com/api/v1/expressions/random?callback=?';        
-
-    $.ajax({
-        url: url,
-        dataType: "jsonp",
-        async: true,
-        success: function (result) {
-            ajax.parseJSONP(result);
-        },
-        error: function (request,error) {
-            alert('Network error has occurred please try again!');
-            console.log(error);
-            console.log(request);
+    var url = 'http://speaklikeabrazilian.com/api/v1/expressions/random';
+    console.log('Loading random expressions...');
+    $.mobile.loading('show');
+    promise.get(url).then(function(error, text, xhr) {
+        if (error) {
+            alert('Error ' + xhr.status);
+            $.mobile.loading('hide');
+            return;
         }
+        ajax.parseJSONP(text);
+        $.mobile.loading('hide');
     });
 };
 
@@ -56,6 +53,8 @@ var ajax = {
     parseJSONP:function(result){  
         expressionInfo.result = result;
         $('#expression-list').empty();
+        console.log('Parsing results...');
+        var result = JSON.parse(result);
         if (result.length > 0) {
             $.each(result, function(i, row) {
                 $('#expression-list').append(
@@ -77,18 +76,16 @@ var ajax = {
 };
 
 var submitSearchForm = function() {
-    $.ajax({
-        url: 'http://speaklikeabrazilian.com/api/v1/expressions/search?q=' + $('#q').val(),
-        dataType: "jsonp",
-        async: true,
-        success: function (result) {
-            ajax.parseJSONP(result);
-        },
-        error: function (request,error) {
-            alert('Network error has occurred please try again!');
-            console.log(error);
-            console.log(request);
+    var url = 'http://speaklikeabrazilian.com/api/v1/expressions/search?q=' + $('#q').val();
+    $.mobile.loading('show');
+    promise.get(url).then(function(error, text, xhr) {
+        if (error) {
+            alert('Error ' + xhr.status);
+            $.mobile.loading('hide');
+            return;
         }
+        ajax.parseJSONP(text);
+        $.mobile.loading('hide');
     });
     return false;
 };
