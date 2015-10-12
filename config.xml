@@ -1,12 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.com.speaklikeabrazilian" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>SpeakLikeABrazilian</name>
+<widget id="br.com.speaklikeabrazilian" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Speak Like A Brazilian</name>
     <description>
         App to learn common expressions and slangs in Brazilian Portuguese.
     </description>
     <author email="brunodepaulak@yahoo.com.br" href="http://speaklikeabrazilian.com">
-        Bruno P. Kinoshita, The Speak Like A Brazilian team
+        Speak Like A Brazilian
     </author>
     <content src="index.html" />
     <access origin="*" />
+     <platform name="android">
+          <icon src="res/android/drawable-ldpi/ic_launcher.png" density="ldpi" />
+          <icon src="res/android/drawable-mdpi/ic_launcher.png" density="mdpi" />
+          <icon src="res/android/drawable-hdpi/ic_launcher.png" density="hdpi" />
+          <icon src="res/android/drawable-xhdpi/ic_launcher.png" density="xhdpi" />
+          <icon src="res/android/drawable-xxhdpi/ic_launcher.png" density="xxhdpi" />
+     </platform>
 </widget>
