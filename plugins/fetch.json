@@ -1,10 +1,4 @@
 {
-    "org.apache.cordova.console": {
-        "source": {
-            "type": "local",
-            "path": "/home/kinow/.plugman/cache/org.apache.cordova.console/0.2.9/package"
-        }
-    },
     "org.apache.cordova.device": {
         "source": {
             "type": "local",

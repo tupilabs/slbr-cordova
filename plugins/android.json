@@ -22,9 +22,6 @@
         }
     },
     "installed_plugins": {
-        "org.apache.cordova.console": {
-            "PACKAGE_NAME": "br.com.speaklikeabrazilian"
-        },
         "org.apache.cordova.device": {
             "PACKAGE_NAME": "br.com.speaklikeabrazilian"
         },
